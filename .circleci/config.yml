@@ -1,0 +1,36 @@
+version: 2.1
+
+executors:
+  windows_executor:
+    machine:
+      image: windows-server-2022-gui:stable  # Upgraded recommended Windows executor for full desktop builds
+
+jobs:
+  build_windows_desktop_agent:
+    executor: windows_executor
+    steps:
+      - checkout
+      - run:
+          name: Install WiX Toolset
+          command: choco install wixtoolset -y
+      - run:
+          name: Restore NuGet Packages
+          command: nuget restore malicious-ai-agent.sln
+      - run:
+          name: Build Application
+          command: msbuild malicious-ai-agent.sln /p:Configuration=Release /p:Platform="Any CPU"
+      - run:
+          name: Run Tests
+          command: dotnet test tests/MaliciousAIAgent.Tests.csproj --configuration Release
+      - run:
+          name: Package Installer
+          command: |
+            & "C:\Program Files (x86)\WiX Toolset v3.11\bin\candle.exe" installer/installer.wxs -o installer.wixobj
+            & "C:\Program Files (x86)\WiX Toolset v3.11\bin\light.exe" installer.wixobj -o MaliciousAIAgentInstaller.msi
+      - store_artifacts:
+          path: MaliciousAIAgentInstaller.msi
+
+workflows:
+  build_and_package_desktop_agent:
+    jobs:
+      - build_windows_desktop_agent

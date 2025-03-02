@@ -1,0 +1,1 @@
+@"C:\Program Files (x86)\WiX Toolset v3.11\bin\candle.exe" installer.wxs -o installer.wixobj

@@ -1,0 +1,14 @@
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.msi
+.vscode/
+.idea/
+packages/
