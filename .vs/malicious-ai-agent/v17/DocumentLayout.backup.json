@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|c:\\users\\henry\\source\\repos\\malicous-ai-agent\\.vs\\vsworkspacestate.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|solutionrelative:.vs\\vsworkspacestate.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|c:\\users\\henry\\source\\repos\\malicous-ai-agent\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|c:\\users\\henry\\source\\repos\\malicous-ai-agent\\.circleci\\config.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|solutionrelative:.circleci\\config.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VSWorkspaceState.json",
+              "DocumentMoniker": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\.vs\\VSWorkspaceState.json",
+              "RelativeDocumentMoniker": ".vs\\VSWorkspaceState.json",
+              "ToolTip": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\.vs\\VSWorkspaceState.json",
+              "RelativeToolTip": ".vs\\VSWorkspaceState.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-02T04:07:55.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-03-02T04:02:46.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "config.yml",
+              "DocumentMoniker": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\.circleci\\config.yml",
+              "RelativeDocumentMoniker": ".circleci\\config.yml",
+              "ToolTip": "C:\\Users\\henry\\source\\repos\\malicous-ai-agent\\.circleci\\config.yml",
+              "RelativeToolTip": ".circleci\\config.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-03-02T04:00:43.616Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
