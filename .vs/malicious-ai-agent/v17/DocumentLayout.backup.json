@@ -3,8 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\henry\\source\\repos\\malicious-ai-agent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|c:\\users\\henry\\source\\repos\\malicious-ai-agent\\maliciousinstaller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF01566-13BD-C68C-0EFD-BF478766B729}|malicious-ai-agent.csproj|solutionrelative:maliciousinstaller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B412D65F-F685-4E0A-8703-8AB6428A9236}|..\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Malicous-Agent-WindowsAppPacking (Package).wapproj|c:\\users\\henry\\source\\repos\\malicous-agent-windowsapppacking\\malicous-agent-windowsapppacking (package)\\package.appxmanifest||{4D47164B-07B6-4A52-A855-728D6A2E2AA3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B412D65F-F685-4E0A-8703-8AB6428A9236}|..\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Malicous-Agent-WindowsAppPacking (Package).wapproj|c:\\users\\henry\\source\\repos\\malicous-agent-windowsapppacking\\malicous-agent-windowsapppacking (package)\\malicous-agent-windowsapppacking (package).wapproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +16,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Malicous-Agent-WindowsAppPacking (Package)",
+              "DocumentMoniker": "C:\\Users\\henry\\Source\\Repos\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Malicous-Agent-WindowsAppPacking (Package).wapproj",
+              "RelativeDocumentMoniker": "..\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Malicous-Agent-WindowsAppPacking (Package).wapproj",
+              "ToolTip": "C:\\Users\\henry\\Source\\Repos\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Malicous-Agent-WindowsAppPacking (Package).wapproj",
+              "RelativeToolTip": "..\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Malicous-Agent-WindowsAppPacking (Package).wapproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-02T18:38:31.582Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -27,14 +42,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\henry\\source\\repos\\malicious-ai-agent\\MaliciousInstaller\\Program.cs",
-              "RelativeDocumentMoniker": "MaliciousInstaller\\Program.cs",
-              "ToolTip": "C:\\Users\\henry\\source\\repos\\malicious-ai-agent\\MaliciousInstaller\\Program.cs",
-              "RelativeToolTip": "MaliciousInstaller\\Program.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAmwB8AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:01:22.117Z",
+              "Title": "Package.appxmanifest",
+              "DocumentMoniker": "C:\\Users\\henry\\source\\repos\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Package.appxmanifest",
+              "RelativeDocumentMoniker": "..\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Package.appxmanifest",
+              "ToolTip": "C:\\Users\\henry\\source\\repos\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Package.appxmanifest",
+              "RelativeToolTip": "..\\Malicous-Agent-WindowsAppPacking\\Malicous-Agent-WindowsAppPacking (Package)\\Package.appxmanifest",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001793|",
+              "WhenOpened": "2025-03-02T18:39:50.13Z",
               "EditorCaption": ""
             }
           ]
