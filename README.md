@@ -1,5 +1,6 @@
-# malicous-ai-agent
-malicous AI agent for cortex on cloud demo purposes 
+# malicious AI agent
+
+malicous AI agent for cortex on cloud demo purposes. Code assets to be packacged into a local msi installer that will simulate endpoint detections 
 
 
 ## Security Demonstration Disclaimer:
