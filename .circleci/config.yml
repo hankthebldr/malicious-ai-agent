@@ -1,34 +1,56 @@
 version: 2.1
 
-executors:
-  windows_executor:
-    machine:
-      image: windows-server-2022-gui:stable  # Corrected to a fully supported Windows executor
+orbs:
+  win: circleci/windows@5.0  # Orb for Windows executors (version may vary)
 
 jobs:
-  build_windows_desktop_agent:
-    executor: windows_executor
-    working_directory: ~/project
+  build:
+    executor:
+      name: win/default    # Use Windows VM executor
+      size: medium         # Use medium VM (4 vCPU, 15 GB RAM) [oai_citation_attribution:18‡circleci.com](https://circleci.com/docs/using-windows/#:~:text=)
+    environment:
+      # (Optional) Define any environment variables needed for versioning, etc.
+      MSI_VERSION: "1.0.${CIRCLE_BUILD_NUM}"  # example version using build number
     steps:
       - checkout
+
+      # Restore NuGet packages (uses cache if available)
+      - restore_cache:
+          keys:
+            - nuget-packages-v1-{{ checksum "MySolution.sln" }}  # cache key based on solution
+      - run:
+          name: Restore NuGet Packages
+          command: nuget restore MySolution.sln
+      - save_cache:
+          paths:
+            - C:\Users\circleci\.nuget\packages   # cache global packages folder [oai_citation_attribution:19‡discuss.circleci.com](https://discuss.circleci.com/t/setup-circleci-for-asp-net-project/33796#:~:text=,windows.csproj%22)
+          key: nuget-packages-v1-{{ checksum "MySolution.sln" }}
+
+      # Install WiX Toolset for MSI building
       - run:
           name: Install WiX Toolset
-          command: choco install wixtoolset -y
-      - run:
-          name: Restore NuGet packages
-          command: nuget restore malicious-ai-agent.sln
-      - run:
-          name: Build Application
-          command: msbuild malicious-ai-agent.sln /p:Configuration=Release /p:Platform="Any CPU"
-      - run:
-          name: Package Installer (WiX)
           command: |
-            candle.exe installer/installer.wxs -o installer/installer.wixobj
-            light.exe installer/installer.wixobj -o installer/MaliciousAIAgentInstaller.msi
-      - store_artifacts:
-          path: installer/MaliciousAIAgentInstaller.msi
+            choco install wixtoolset --no-progress -y
+            # Add WiX binaries to PATH for this session [oai_citation_attribution:20‡osquery.readthedocs.io](https://osquery.readthedocs.io/en/4.4.0/installation/install-windows/#:~:text=1,target%20package)
+            $env:Path += ";C:\Program Files (x86)\WiX Toolset v3.11\bin"
 
+      # Build the application and MSI installer
+      - run:
+          name: Build Solution and MSI
+          command: |
+            # Build the main application in Release mode
+            msbuild MySolution.sln /p:Configuration=Release
+            # Build the WiX installer project (assumes MyInstaller.wixproj exists)
+            msbuild Installer\MyInstaller.wixproj /p:Configuration=Release /p:ProductVersion=%MSI_VERSION%
+            # After this, the MSI should be created in the wix project output folder
+
+      # Store the MSI artifact for download
+      - store_artifacts:
+          path: Installer\MyInstaller\bin\Release\MyAppInstaller.msi
+          destination: MyAppInstaller_v%MSI_VERSION%.msi
+          
 workflows:
-  build_and_package_desktop_agent:
+  version: 2
+  build_and_package:
     jobs:
-      - build_windows_desktop_agent
+      - build
